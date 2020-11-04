@@ -19,5 +19,33 @@ Features
 * This python package supports biometrics and demographics authentication using the Aadhaar Authentication Service (also known as UID). The library takes care of the details of packaging data and communicating with the Aadhaar authentication server leaving the developer to focus on the application, say Aadhaar-enabled payments.This implementation is basically compliant with Aadhaar authentication API Ver 1.5 (Rev 1) but is WIP.
 
 ### audio_classification_Team_iron_man/scripts
-* we are converting audio files to spectrograms. Then we are trainning the model with spectrograms of audio files. Instead of inventing something new we are trying to make use .
+* we are converting audio files to spectrograms. Then we are trainning the model with spectrograms of audio files. Instead of inventing something new we are trying to make use, we are using Google's Inception model.
+
+### mental_status__Team_iron_man
+*  Effort addresses an automated device for mental status and current behaviour from acoustic features in speech. 
+
+### eVoting_blockchain__Team_iron_man
+Architecture of network
+
+![alt tag](https://raw.githubusercontent.com/ngocjr7/voting-blockchain/master/docs/architecture.png)
+
+![alt tag](https://raw.githubusercontent.com/ngocjr7/voting-blockchain/master/docs/network_sample.png)
+
+
+#### Certificate Authority
+
+It can validate connection when a node ask to join to network and Set permission for each node and validate transaction
+
+#### Orderer
+
+It can hold a list of peers and broadcast to all peer when receive a request broadcast new block or new transaction.
+It also have consensus method, which can return the longest blockchain in the network
+
+#### Peer
+
+It hold all data about blockchain, it have some method like mine, validate_transaction, return chain, open surveys, ...
+
+
+
+
 
